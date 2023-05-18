@@ -167,7 +167,7 @@ func (k *keychain) Set(item Item) error {
 		kcItem.SetAccessControlFlags(gokeychain.AccessibleWhenUnlockedThisDeviceOnly, gokeychain.AccessControlFlagUserPresence)
 	}
 
-	if k.path != "" {
+	if k.path != "" && !item.RequiresUserPresence {
 		kcItem.UseKeychain(kc)
 	}
 
@@ -175,9 +175,9 @@ func (k *keychain) Set(item Item) error {
 		kcItem.SetSynchronizable(gokeychain.SynchronizableYes)
 	}
 
-	if k.isAccessibleWhenUnlocked {
-		kcItem.SetAccessible(gokeychain.AccessibleWhenUnlocked)
-	}
+	//if k.isAccessibleWhenUnlocked {
+	//	kcItem.SetAccessible(gokeychain.AccessibleWhenUnlocked)
+	//}
 
 	isTrusted := k.isTrusted && !item.KeychainNotTrustApplication
 

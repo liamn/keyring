@@ -163,6 +163,10 @@ func (k *keychain) Set(item Item) error {
 	kcItem.SetDescription(item.Description)
 	kcItem.SetData(item.Data)
 
+	if item.RequiresUserPresence {
+		kcItem.SetAccessControlFlags(gokeychain.AccessibleWhenUnlockedThisDeviceOnly, gokeychain.AccessControlFlagUserPresence)
+	}
+
 	if k.path != "" {
 		kcItem.UseKeychain(kc)
 	}

@@ -14,6 +14,12 @@ github.com/gsterjov/go-libsecret v0.0.0-20161001094733-a6f4afe4910c/go.mod h1:NM
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
+github.com/liamn/go-keychain v0.0.0-20191008050251-8e49817e8af4 h1:bH57lxQBDtU47SD87qmOW6UPQxwxvfD+Ca2OydZgHDc=
+github.com/liamn/go-keychain v0.0.0-20191008050251-8e49817e8af4/go.mod h1:Zr7WNhMwKqOZIR3k/mxjeHpuqB9EcyaWWAKSjf+n+8M=
+github.com/liamn/go-keychain v0.0.0-20230518091945-3982659508a3 h1:9BrRs8F13F4FRCVKUMwdL3JUYpbuhQF7MlUVWnZqhOY=
+github.com/liamn/go-keychain v0.0.0-20230518091945-3982659508a3/go.mod h1:Zr7WNhMwKqOZIR3k/mxjeHpuqB9EcyaWWAKSjf+n+8M=
+github.com/liamn/go-keychain v0.0.0-20230518093015-1978ff12f1b9 h1:j1zkULYeXFnbK1cHJHnKCdimvCiUaH5Ogie7gvp6tFk=
+github.com/liamn/go-keychain v0.0.0-20230518093015-1978ff12f1b9/go.mod h1:Zr7WNhMwKqOZIR3k/mxjeHpuqB9EcyaWWAKSjf+n+8M=
 github.com/mtibben/percent v0.2.1 h1:5gssi8Nqo8QU/r2pynCm+hBQHpkB/uNK7BJCFogWdzs=
 github.com/mtibben/percent v0.2.1/go.mod h1:KG9uO+SZkUp+VkRHsCdYQV3XSZrrSpR3O9ibNBTZrns=
 github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e h1:fD57ERR4JtEqsWbfPhv4DMiApHyliiK5xCTNVSPiaAs=

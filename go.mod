@@ -14,6 +14,8 @@ require (
 	golang.org/x/term v0.3.0
 )
 
+replace github.com/99designs/go-keychain => github.com/liamn/go-keychain v0.0.0-20230518093015-1978ff12f1b9
+
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect

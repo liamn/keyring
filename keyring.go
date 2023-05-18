@@ -83,6 +83,7 @@ type Item struct {
 	// Backend specific config
 	KeychainNotTrustApplication bool
 	KeychainNotSynchronizable   bool
+	RequiresUserPresence        bool
 }
 
 // Metadata is information about a thing stored on the keyring; retrieving

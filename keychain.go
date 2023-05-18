@@ -170,9 +170,9 @@ func (k *keychain) Set(item Item) error {
 		}
 	}
 
-	if k.path != "" && !item.RequiresUserPresence {
-		kcItem.UseKeychain(kc)
-	}
+	//if k.path != "" && !item.RequiresUserPresence {
+	//	kcItem.UseKeychain(kc)
+	//}
 
 	if k.isSynchronizable && !item.KeychainNotSynchronizable {
 		kcItem.SetSynchronizable(gokeychain.SynchronizableYes)
@@ -183,20 +183,20 @@ func (k *keychain) Set(item Item) error {
 	//}
 
 	isTrusted := k.isTrusted && !item.KeychainNotTrustApplication
-
-	if isTrusted {
-		debugf("Keychain item trusts keyring")
-		kcItem.SetAccess(&gokeychain.Access{
-			Label:               item.Label,
-			TrustedApplications: nil,
-		})
-	} else {
-		debugf("Keychain item doesn't trust keyring")
-		kcItem.SetAccess(&gokeychain.Access{
-			Label:               item.Label,
-			TrustedApplications: []string{},
-		})
-	}
+	//
+	//if isTrusted {
+	//	debugf("Keychain item trusts keyring")
+	//	kcItem.SetAccess(&gokeychain.Access{
+	//		Label:               item.Label,
+	//		TrustedApplications: nil,
+	//	})
+	//} else {
+	//	debugf("Keychain item doesn't trust keyring")
+	//	kcItem.SetAccess(&gokeychain.Access{
+	//		Label:               item.Label,
+	//		TrustedApplications: []string{},
+	//	})
+	//}
 
 	debugf("Adding service=%q, label=%q, account=%q, trusted=%v to osx keychain %q", k.service, item.Label, item.Key, isTrusted, k.path)
 
